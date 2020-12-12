@@ -1,0 +1,7 @@
+ME=me@example.phish
+SECURITY=security@example.phish
+
+* !^X-Loop: ${ME}
+* ^X-Mailer: gophish$
+| (formail -r -A"From: ${ME}" -A "X-Loop: ${ME}" \
+  -A"X-Mailer: gophish-yourself" -I"To: ${SECURITY}" -A"Bcc: ${ME}" -I"Subject: Phishing attempt" ; cat phishing.txt) | $SENDMAIL -oi -t

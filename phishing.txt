@@ -1,0 +1,6 @@
+The following email appears to be a phishing attempt:
+  hxxps://innocent.definitely.not.phishing/~me/phishing-attempt-with-headers.txt
+(replace the "xx" with "tt")
+
+--
+Yours Truly
